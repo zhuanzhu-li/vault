@@ -1,0 +1,14 @@
+# Obsidian 工作区状态
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# 社区插件和主题
+.obsidian/plugins/
+.obsidian/themes/
+
+# AI 临时草稿
+*.tmp.md
+
+# 系统文件
+.DS_Store
+Thumbs.db
