@@ -7,6 +7,7 @@ aliases:
   - 纯文本知识库
 sources:
   - "[[raw/clippings/2026-05-20-file-over-app]]"
+  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
 ---
 
 # 纯文本知识库
@@ -33,3 +34,4 @@ sources:
 - [[File Over App_文件优于应用|文件优于应用]]
 - [[Open File Formats_开放文件格式|开放文件格式]]
 - [[Obsidian_黑曜石|黑曜石]]
+- [[Project Context Persistence_项目上下文持久化|项目上下文持久化]] — Claude Code 侧的 CLAUDE.md / SKILL

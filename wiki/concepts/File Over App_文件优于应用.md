@@ -8,6 +8,7 @@ aliases:
   - 文件大于应用
 sources:
   - "[[raw/clippings/2026-05-20-file-over-app]]"
+  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
 ---
 
 # 文件优于应用
@@ -33,3 +34,4 @@ sources:
 - [[Digital Durability_数字耐久性|数字耐久性]]
 - [[Plain Text Knowledge Base_纯文本知识库|纯文本知识库]]
 - [[User Data Ownership_用户数据所有权|用户数据所有权]]
+- [[Harness Engineering_Harness 工程|Harness 工程]] — 规范写入 CLAUDE.md / hooks 文件

@@ -1,0 +1,43 @@
+---
+title: 数仓 AI 工作流
+type: concept
+tags: [ai-coding, data-warehouse, workflow, skill]
+aliases:
+  - DW AI Workflow
+  - 数仓 AI 工作流
+sources:
+  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+---
+
+# 数仓 AI 工作流
+
+[[Dewu_得物|得物]]离线数仓的 **8 步 SKILL 流程**，与 [[Harness Engineering_Harness 工程|Harness 工程]] 三层机制（持久化 / Hooks / Subagent）对齐。
+
+## 八步流程
+
+| 步骤 | 名称 | 建议执行方式 |
+|------|------|--------------|
+| 1 | 需求分析 | 主会话 + dw-explorer 摘要 |
+| 2 | 技术设计 | 主会话；结论写入 CLAUDE.md |
+| 3 | ETL 开发 | PostToolUse hook + sql-validator |
+| 4 | 自测 | data-quality-checker subagent |
+| 5 | 数据比对 | data-comparator subagent |
+| 6 | SR 导入 | dw-sr SKILL + 摘要 |
+| 7 | 性能优化 | dw-explorer subagent |
+| 8 | SLA/DQC | 主会话生成规则 JSON |
+
+## 分工原则
+
+- **主会话**：内容量有限、需人决策的步骤（需求、设计、DQC 规则）
+- **Harness**：每次写 `.sql` 的规范检查（不依赖人工提醒）
+- **Subagent**：血缘、自测、比对等会撑爆 context 的步骤
+
+## SKILL 命令示例
+
+`/dw-etl`、`/dw-自测` 等：封装规范 + 产出格式 + hook 护栏 + subagent 验证；主对话只收决策级信息。
+
+## 相关
+
+- [[AI Coding Hooks_编码 Hooks|编码 Hooks]]
+- [[Subagent Context Isolation_Subagent 上下文隔离|Subagent 上下文隔离]]
+- [[Semantic Data Accuracy_语义数据准确率|语义数据准确率]]
