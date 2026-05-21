@@ -47,6 +47,16 @@ sources: []
 - [[Semantic Data Accuracy_语义数据准确率|语义数据准确率]] — 语义 × 规范覆盖度
 - [[DW AI Workflow_数仓 AI 工作流|数仓 AI 工作流]] — 8 步 SKILL 与 Harness 分工
 
+### GIS 基础
+
+- [[GIS Coordinate Systems_GIS坐标系|GIS 坐标系与地图投影]] — WGS84、GCJ-02及Web Mercator等
+- [[Spatial Data Models_空间数据模型|空间数据模型]] — 矢量数据与栅格数据的结构差异
+- [[Spatial Analysis_空间分析|空间分析]] — 缓冲区、叠加及网络分析等拓扑计算
+- [[WebGIS]] — OGC标准及主流GIS技术栈
+- [[GeoTools Architecture_GeoTools架构|GeoTools 架构]] — Java GIS 开源库的核心架构
+- [[JTS_Java Topology Suite|JTS]] — Java 空间几何与拓扑计算库
+- [[CQL_Common Query Language|CQL]] — 地理空间通用查询语言
+
 ## 实体
 
 - [[Cursor]] — 深度集成 AI 功能的现代代码编辑器
@@ -55,9 +65,14 @@ sources: []
 - [[Dewu_得物|得物]] — 数仓 Harness 实践来源
 - [[Claude Code_Claude Code|Claude Code]] — Harness 宿主工具
 - [[Danke_丹克|丹克]] — 得物 Harness 文章作者
+- [[OGC_开放地理空间信息联盟|OGC]] — 开放地理空间信息联盟，制定 WMS/WFS 等标准
+- [[GeoTools]] — Java WebGIS 主流开源工具库
+- [[OSGeo_开源地理空间基金会|OSGeo]] — 开源地理空间基金会
 
 ## 已导入来源
 
 - [[raw/clippings/2026-05-21-ai-harness-engineering-conversation]] — Agent & User, 2026-05-21
+- [[raw/clippings/2026-05-21-gis-fundamentals]] — Agent & User, 2026-05-21
 - [[raw/clippings/2026-05-20-file-over-app]] — 斯蒂芬·安戈，2023-07-01
 - [[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]] — 丹克 / 得物技术，2026
+- [[raw/clippings/2026-05-21-geotools-user-guide]] — OSGeo, 2026-05-21

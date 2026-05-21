@@ -26,3 +26,9 @@ Harness Engineering（驾驭工程）在此语境下指的是当前使用 AI 编
 - Step 2: 存储与数据建模设计（DDL、数据量预估、实体映射）
 - Step 3: API 契约与事务设计（RESTful 接口、分布式事务）
 - Step 4: 编码实现与自测指导（按层实现，并给出测试关注点清单）
+
+## 百科链接
+
+- [[AI Harness Engineering]]
+- [[Coding Harness]]
+- [[Process Harness]]
