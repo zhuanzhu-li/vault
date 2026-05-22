@@ -6,12 +6,12 @@ aliases:
   - DW AI Workflow
   - 数仓 AI 工作流
 sources:
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
 ---
 
 # 数仓 AI 工作流
 
-[[Dewu_得物|得物]]离线数仓的 **8 步 SKILL 流程**，与 [[Harness Engineering_Harness 工程|Harness 工程]] 三层机制（持久化 / Hooks / Subagent）对齐。
+[得物](Dewu_得物.md)离线数仓的 **8 步 SKILL 流程**，与 [Harness 工程](Harness%20Engineering_Harness%20工程.md) 三层机制（持久化 / Hooks / Subagent）对齐。
 
 ## 八步流程
 
@@ -38,6 +38,6 @@ sources:
 
 ## 相关
 
-- [[AI Coding Hooks_编码 Hooks|编码 Hooks]]
-- [[Subagent Context Isolation_Subagent 上下文隔离|Subagent 上下文隔离]]
-- [[Semantic Data Accuracy_语义数据准确率|语义数据准确率]]
+- [编码 Hooks](AI%20Coding%20Hooks_编码%20Hooks.md)
+- [Subagent 上下文隔离](Subagent%20Context%20Isolation_Subagent%20上下文隔离.md)
+- [语义数据准确率](Semantic%20Data%20Accuracy_语义数据准确率.md)

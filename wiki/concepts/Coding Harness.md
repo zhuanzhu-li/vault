@@ -3,12 +3,12 @@ title: Coding Harness
 type: concept
 tags: [ai-agent, prompt-engineering, code-standards]
 sources:
-  - "[[raw/clippings/2026-05-21-ai-harness-engineering-conversation]]"
+  - "[2026-05-21-ai-harness-engineering-conversation](raw/clippings/2026-05-21-ai-harness-engineering-conversation.md)"
 ---
 
 # Coding Harness
 
-Coding Harness（代码规范驾驭）是 [[AI Harness Engineering]] 的一个维度。它主要用于约束 AI 生成代码的风格、边界和安全红线。
+Coding Harness（代码规范驾驭）是 [AI Harness Engineering](AI%20Harness%20Engineering.md) 的一个维度。它主要用于约束 AI 生成代码的风格、边界和安全红线。
 
 主要作用包括：
 - **实施强制代码标记**：建立可追溯性。

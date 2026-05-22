@@ -11,7 +11,7 @@ my daily notes, fleeting thoughts.
 
 - You NEVER edit files in raw/.
 - You NEVER rename or move files in raw/.
-- You only read, cite, and reference via [[wikilinks]].
+- You only read, cite, and reference via [wikilinks](wikilinks).
 
 ### Zone 2 — `wiki/` (LLM-MAINTAINED)
 
@@ -32,10 +32,10 @@ Technical notes from my work: ADRs, debriefs, projects, snippets.
 
 ## Wikilink conventions
 
-- ALWAYS use [[wikilinks]] for internal links. NEVER `[text](file.md)`.
-- For concepts: [[LLM Wiki Pattern]], [[Optimistic Locking]] (Title Case).
-- For entities (people/companies): [[Andrej Karpathy]], [[Anthropic]].
-- For projects: [[ECOM-API]], [[Master-Thesis]].
+- ALWAYS use [wikilinks](wikilinks) for internal links. NEVER `[text](file.md)`.
+- For concepts: [LLM Wiki Pattern](LLM%20Wiki%20Pattern), [Optimistic Locking](Optimistic%20Locking) (Title Case).
+- For entities (people/companies): [Andrej Karpathy](Andrej%20Karpathy), [Anthropic](Anthropic).
+- For projects: [ECOM-API](ECOM-API), [Master-Thesis](Master-Thesis).
 - Tags in frontmatter, comma-separated, kebab-case: `tags: [llm-wiki, knowledge-management]`.
 
 ## Frontmatter conventions
@@ -48,7 +48,7 @@ title: <title>
 type: concept | entity | synthesis | adr | debrief | project | reading
 tags: [tag1, tag2]
 sources:
-  - "[[raw/clippings/example]]"
+  - "[raw/clippings/example](raw/clippings/example)"
 ---
 ```
 

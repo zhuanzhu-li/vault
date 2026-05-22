@@ -3,12 +3,12 @@ title: GIS 坐标系与地图投影
 type: concept
 tags: [gis, coordinate-system, projection]
 sources:
- - "[[raw/clippings/2026-05-21-gis-fundamentals]]"
+ - "[2026-05-21-gis-fundamentals](raw/clippings/2026-05-21-gis-fundamentals.md)"
 ---
 
 # GIS 坐标系与地图投影
 
-坐标系是 [[WebGIS]] 和所有地理信息系统中最基础的组成部分。
+坐标系是 [WebGIS](WebGIS.md) 和所有地理信息系统中最基础的组成部分。
 
 ## 地理坐标系 (GCS)
 用经纬度来表示地球表面的位置。
@@ -22,4 +22,4 @@ sources:
 - **Web Mercator (EPSG:3857)**：互联网地图屏幕渲染常用。
 - **Gauss-Kruger / UTM**：局部区域精确测量常用。
 
-相关概念：[[Spatial Data Models_空间数据模型]]，[[Spatial Analysis_空间分析]]。
+相关概念：[Spatial Data Models_空间数据模型](Spatial%20Data%20Models_空间数据模型.md)，[Spatial Analysis_空间分析](Spatial%20Analysis_空间分析.md)。

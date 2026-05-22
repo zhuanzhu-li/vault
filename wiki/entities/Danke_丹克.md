@@ -6,12 +6,12 @@ aliases:
   - Danke
   - 丹克
 sources:
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
 ---
 
 # 丹克
 
-[[Dewu_得物|得物技术]]作者，撰写 [[Harness Engineering_Harness 工程|Harness 工程]] 在离线数仓侧的落地方案。
+[得物技术](Dewu_得物.md)作者，撰写 [Harness 工程](Harness%20Engineering_Harness%20工程.md) 在离线数仓侧的落地方案。
 
 ## 本文贡献
 
@@ -21,5 +21,5 @@ sources:
 
 ## 相关
 
-- [[Dewu_得物|得物]]
-- [[DW AI Workflow_数仓 AI 工作流|数仓 AI 工作流]]
+- [得物](Dewu_得物.md)
+- [数仓 AI 工作流](DW%20AI%20Workflow_数仓%20AI%20工作流.md)

@@ -13,7 +13,7 @@ sources: []
 
 Java 虚拟机在执行 Java 程序的过程中会把它所管理的内存划分为若干个不同的数据区域，这被称为 JVM 内存结构或运行时数据区。
 
-> **注意区分**：这与并发模型 [[Java Memory Model_Java 内存模型|JMM]] 是两个不同维度的概念。
+> **注意区分**：这与并发模型 [JMM](Java%20Memory%20Model_Java%20内存模型.md) 是两个不同维度的概念。
 
 ## 线程私有区域 (Thread Private)
 
@@ -46,6 +46,6 @@ Java 虚拟机在执行 Java 程序的过程中会把它所管理的内存划分
 - 并不是 JVM 运行时数据区的一部分，也不是 JVM 规范中定义的内存区域。它通过 NIO (New Input/Output) 中的 `DirectByteBuffer` 对象直接分配堆外内存，以提高性能，避免在 Java 堆和 Native 堆中来回复制数据。
 
 ## 相关链接
-- 并发控制视角：[[Java Memory Model_Java 内存模型]]
-- 调优实战：[[JVM Tuning]] (待完善)
-- G1 GC: [[G1 Garbage Collector_G1 收集器|G1 垃圾收集器]]
+- 并发控制视角：[Java Memory Model_Java 内存模型](Java%20Memory%20Model_Java%20内存模型.md)
+- 调优实战：[JVM Tuning](JVM%20Tuning) (待完善)
+- G1 GC: [G1 垃圾收集器](G1%20Garbage%20Collector_G1%20收集器.md)

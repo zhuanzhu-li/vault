@@ -4,12 +4,12 @@ type: project
 tags: [interview, java, spring, redis, mysql, postgresql]
 status: in-progress
 sources: []
-parent: "[[Java 面试复习计划]]"
+parent: "[Java 面试复习计划](Java%20面试复习计划.md)"
 ---
 
 # 框架与中间件
 
-> **[AI 协作指令]** 见：[[Java 面试复习计划#AI 协作指令]]
+> **[AI 协作指令]** 见：[](Java%20面试复习计划.md#AI%20协作指令)
 
 ## Spring / Spring Boot (待完善)
 
@@ -31,42 +31,42 @@ parent: "[[Java 面试复习计划]]"
 
 ## PostgreSQL
 
-👉 核心概念总览：[[PostgreSQL_PostgreSQL]]
+👉 核心概念总览：[PostgreSQL_PostgreSQL](PostgreSQL_PostgreSQL.md)
 
 - [x] **基础与架构**
   - [x] PostgreSQL 相比 MySQL 有哪些核心优势和区别？
-    👉 答案见：[[PostgreSQL_PostgreSQL#PostgreSQL vs MySQL]]
-  - [x] 解释 PostgreSQL 中的 [[MVCC_MVCC|MVCC]] 实现原理？什么是事务 ID 回卷（Transaction ID Wraparound）？如何预防？
-    👉 核心原理见：[[MVCC_MVCC]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#PostgreSQL%20vs%20MySQL)
+  - [x] 解释 PostgreSQL 中的 [MVCC](MVCC_MVCC.md) 实现原理？什么是事务 ID 回卷（Transaction ID Wraparound）？如何预防？
+    👉 核心原理见：[MVCC_MVCC](MVCC_MVCC.md)
   - [x] 讲讲 PostgreSQL 的进程架构（Postmaster、Backend Process、WAL Writer、Autovacuum 等）？
-    👉 答案见：[[PostgreSQL_PostgreSQL#进程架构]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#进程架构)
   - [x] PostgreSQL 有哪些隔离级别？默认是什么？Repeatable Read 下能防止幻读吗？
-    👉 答案见：[[PostgreSQL_PostgreSQL#事务隔离级别]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#事务隔离级别)
 
 - [x] **索引与查询优化**
   - [x] PostgreSQL 支持哪些索引类型（B-tree、Hash、GiST、GIN、BRIN）？各自适用什么场景？
-    👉 答案见：[[PostgreSQL_PostgreSQL#索引类型详解]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#索引类型详解)
   - [x] 如何通过 `EXPLAIN ANALYZE` 分析查询性能？关键指标有哪些（Seq Scan、Index Scan、Bitmap Heap Scan、Rows Removed by Filter）？
-    👉 答案见：[[PostgreSQL_PostgreSQL#查询优化（EXPLAIN ANALYZE）]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#查询优化（EXPLAIN%20ANALYZE）)
   - [x] 什么是覆盖索引（Covering Index / INCLUDE 子句）？什么情况下应该使用部分索引（Partial Index）和表达式索引（Expression Index）？
-    👉 答案见：[[raw/clippings/2026-05-22-postgresql-deep-dive#覆盖索引与部分索引]]
+    👉 答案见：[](raw/clippings/2026-05-22-postgresql-deep-dive.md#覆盖索引与部分索引)
 
 - [x] **高级特性**
   - [x] JSONB 的原理与优势？如何对 JSONB 建立索引（GIN 索引）？写出复杂 JSONB 查询示例。
-    👉 答案见：[[PostgreSQL_PostgreSQL#JSONB]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#JSONB)
   - [x] 什么是表分区？PostgreSQL 支持哪些分区方式（Range、List、Hash）？分区裁剪（Partition Pruning）如何工作？
-    👉 答案见：[[PostgreSQL_PostgreSQL#表分区]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#表分区)
   - [x] 什么是逻辑复制？与物理流复制有什么区别？什么是复制槽（Replication Slot）？CDC 场景下如何管理？
-    👉 答案见：[[PostgreSQL_PostgreSQL#逻辑复制 vs 物理流复制]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#逻辑复制%20vs%20物理流复制)
   - [x] 什么是 WAL（Write-Ahead Logging）？它的作用和恢复机制是怎样的？
-    👉 核心原理见：[[WAL_WAL]]
+    👉 核心原理见：[WAL_WAL](WAL_WAL.md)
 
 - [x] **运维与调优**
   - [x] VACUUM 和 Autovacuum 的作用是什么？什么情况下会产生表膨胀（Table Bloat）？如何监控和解决？
-    👉 答案见：[[PostgreSQL_PostgreSQL#VACUUM 与表膨胀]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#VACUUM%20与表膨胀)
   - [x] PostgreSQL 中常见的锁类型有哪些？如何排查锁等待和死锁问题？
-    👉 答案见：[[PostgreSQL_PostgreSQL#锁排查]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#锁排查)
   - [x] 什么是连接池？PgBouncer 的事务级与会话级连接池有什么区别？
-    👉 答案见：[[PostgreSQL_PostgreSQL#PgBouncer 连接池]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#PgBouncer%20连接池)
   - [x] 如何设计 PostgreSQL 的多租户架构？行级安全（Row-Level Security, RLS）如何实现？
-    👉 答案见：[[PostgreSQL_PostgreSQL#多租户与 RLS]]
+    👉 答案见：[](PostgreSQL_PostgreSQL.md#多租户与%20RLS)

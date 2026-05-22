@@ -3,7 +3,7 @@ title: 空间数据模型
 type: concept
 tags: [gis, spatial-data]
 sources:
- - "[[raw/clippings/2026-05-21-gis-fundamentals]]"
+ - "[2026-05-21-gis-fundamentals](raw/clippings/2026-05-21-gis-fundamentals.md)"
 ---
 
 # 空间数据模型
@@ -20,4 +20,4 @@ sources:
 - **特点**：适合表达连续变化的地理现象，如卫星影像、高程数据 (DEM)。
 - **常见格式**：GeoTIFF。
 
-相关概念：[[GIS Coordinate Systems_GIS坐标系]]，[[Spatial Analysis_空间分析]]。
+相关概念：[GIS Coordinate Systems_GIS坐标系](GIS%20Coordinate%20Systems_GIS坐标系.md)，[Spatial Analysis_空间分析](Spatial%20Analysis_空间分析.md)。

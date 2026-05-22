@@ -3,12 +3,12 @@ title: Behavioral Patterns（行为型模式）
 type: concept
 tags: [java, design-patterns, gof, behavioral]
 sources:
-  - "[[raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng]]"
+  - "[2026-05-22-java-design-patterns-liaoxuefeng](raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng.md)"
 ---
 
 # Behavioral Patterns（行为型模式）
 
-行为型模式是 [[GoF Design Patterns_GoF设计模式|GoF 设计模式]] 的第三大类，主要涉及**算法和对象间的职责分配**。通过使用对象组合，行为型模式可以描述一组对象应该如何协作来完成一个整体任务。
+行为型模式是 [GoF 设计模式](GoF%20Design%20Patterns_GoF设计模式.md) 的第三大类，主要涉及**算法和对象间的职责分配**。通过使用对象组合，行为型模式可以描述一组对象应该如何协作来完成一个整体任务。
 
 ## 十一种模式
 
@@ -26,6 +26,6 @@ sources:
 
 ## Related
 
-- [[GoF Design Patterns_GoF设计模式|GoF 设计模式]] — 设计模式总览
-- [[Creational Patterns_创建型模式|创建型模式]] — 对象的创建
-- [[Structural Patterns_结构型模式|结构型模式]] — 对象的组合与结构
+- [GoF 设计模式](GoF%20Design%20Patterns_GoF设计模式.md) — 设计模式总览
+- [创建型模式](Creational%20Patterns_创建型模式.md) — 对象的创建
+- [结构型模式](Structural%20Patterns_结构型模式.md) — 对象的组合与结构

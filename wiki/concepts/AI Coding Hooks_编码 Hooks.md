@@ -7,12 +7,12 @@ aliases:
   - 编码 Hooks
   - Claude Code Hooks
 sources:
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
 ---
 
 # 编码 Hooks
 
-[[Harness Engineering_Harness 工程|Harness 工程]] 在 LLM 推理循环**之外**、由 `settings.json` 配置的确定性回调。数仓场景中用于把规范从「LLM 记忆」变为「每次写文件后强制检查」。
+[Harness 工程](Harness%20Engineering_Harness%20工程.md) 在 LLM 推理循环**之外**、由 `settings.json` 配置的确定性回调。数仓场景中用于把规范从「LLM 记忆」变为「每次写文件后强制检查」。
 
 ## 常见 Hook 类型
 
@@ -34,6 +34,6 @@ sources:
 
 ## 相关
 
-- [[Harness Engineering_Harness 工程|Harness 工程]]
-- [[DW AI Workflow_数仓 AI 工作流|数仓 AI 工作流]]
-- [[Project Context Persistence_项目上下文持久化|项目上下文持久化]]
+- [Harness 工程](Harness%20Engineering_Harness%20工程.md)
+- [数仓 AI 工作流](DW%20AI%20Workflow_数仓%20AI%20工作流.md)
+- [项目上下文持久化](Project%20Context%20Persistence_项目上下文持久化.md)

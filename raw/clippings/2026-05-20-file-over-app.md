@@ -33,11 +33,11 @@ published: 2023-07-01
 
 ## 百科链接
 
-- [[File Over App_文件优于应用|文件优于应用]]
-- [[Digital Durability_数字耐久性|数字耐久性]]
-- [[Software Ephemerality_软件易逝性|软件易逝性]]
-- [[User Data Ownership_用户数据所有权|用户数据所有权]]
-- [[Plain Text Knowledge Base_纯文本知识库|纯文本知识库]]
-- [[Open File Formats_开放文件格式|开放文件格式]]
-- [[Steph Ango_斯蒂芬·安戈|斯蒂芬·安戈]]
-- [[Obsidian_黑曜石|黑曜石]]
+- [文件优于应用](File%20Over%20App_文件优于应用.md)
+- [数字耐久性](Digital%20Durability_数字耐久性.md)
+- [软件易逝性](Software%20Ephemerality_软件易逝性.md)
+- [用户数据所有权](User%20Data%20Ownership_用户数据所有权.md)
+- [纯文本知识库](Plain%20Text%20Knowledge%20Base_纯文本知识库.md)
+- [开放文件格式](Open%20File%20Formats_开放文件格式.md)
+- [斯蒂芬·安戈](Steph%20Ango_斯蒂芬·安戈.md)
+- [黑曜石](Obsidian_黑曜石.md)

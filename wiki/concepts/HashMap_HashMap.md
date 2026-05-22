@@ -8,7 +8,7 @@ sources: []
 # HashMap
 
 
-`HashMap` 是 [[Java Collection Framework_Java集合框架|Java 集合框架]]中最常用的键值对存储结构，基于哈希表实现。
+`HashMap` 是 [Java 集合框架](Java%20Collection%20Framework_Java集合框架.md)中最常用的键值对存储结构，基于哈希表实现。
 
 
 ## 底层数据结构
@@ -31,5 +31,5 @@ sources: []
 - JDK 1.7 可能出现死循环（多线程扩容时的环形链表）。
 - JDK 1.8 可能出现数据覆盖。
 
-- 替代方案：`Hashtable`（性能差，全表锁）或 [[ConcurrentHashMap_ConcurrentHashMap|ConcurrentHashMap]]（推荐，分段锁/CAS）。
+- 替代方案：`Hashtable`（性能差，全表锁）或 [ConcurrentHashMap](ConcurrentHashMap_ConcurrentHashMap.md)（推荐，分段锁/CAS）。
 

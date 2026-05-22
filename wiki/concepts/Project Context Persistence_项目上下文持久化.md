@@ -6,12 +6,12 @@ aliases:
   - Project Context Persistence
   - 项目上下文持久化
 sources:
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
 ---
 
 # 项目上下文持久化
 
-把迭代约束与全局规范写入磁盘，在 [[Claude Code_Claude Code|Claude Code]] 会话启动与 [[Context Compact_上下文压缩|compact]] 后自动重注入——解决「口头说了，compact 后全忘」。
+把迭代约束与全局规范写入磁盘，在 [Claude Code](Claude%20Code_Claude%20Code.md) 会话启动与 [compact](Context%20Compact_上下文压缩.md) 后自动重注入——解决「口头说了，compact 后全忘」。
 
 ## 两层机制
 
@@ -29,11 +29,11 @@ sources:
 
 路径：`~/.claude/projects/<project>/memory/MEMORY.md`。主动让 Claude 记住踩坑（如「amount 是千元」「某字段特定场景为空」）。
 
-## 与 [[Plain Text Knowledge Base_纯文本知识库|纯文本知识库]] 的类比
+## 与 [纯文本知识库](Plain%20Text%20Knowledge%20Base_纯文本知识库.md) 的类比
 
-本 vault 的 `AGENTS.md` / `wiki/` 分工类似：规则与合成知识在文件中，而非锁在单次对话里——参见 [[File Over App_文件优于应用|文件优于应用]]。
+本 vault 的 `AGENTS.md` / `wiki/` 分工类似：规则与合成知识在文件中，而非锁在单次对话里——参见 [文件优于应用](File%20Over%20App_文件优于应用.md)。
 
 ## 相关
 
-- [[Harness Engineering_Harness 工程|Harness 工程]]
-- [[AI Coding Hooks_编码 Hooks|编码 Hooks]]（SessionStart compact 时重注入）
+- [Harness 工程](Harness%20Engineering_Harness%20工程.md)
+- [编码 Hooks](AI%20Coding%20Hooks_编码%20Hooks.md)（SessionStart compact 时重注入）

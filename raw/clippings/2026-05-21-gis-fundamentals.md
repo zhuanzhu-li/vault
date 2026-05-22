@@ -67,8 +67,8 @@ GIS 不仅仅是“在地图上画点”，其核心在于计算空间关系：
 
 ## 百科链接
 
-- [[GIS Coordinate Systems_GIS坐标系|GIS 坐标系]]
-- [[Spatial Data Models_空间数据模型|空间数据模型]]
-- [[Spatial Analysis_空间分析|空间分析]]
-- [[WebGIS]]
-- [[OGC_开放地理空间信息联盟|OGC]]
+- [GIS 坐标系](GIS%20Coordinate%20Systems_GIS坐标系.md)
+- [空间数据模型](Spatial%20Data%20Models_空间数据模型.md)
+- [空间分析](Spatial%20Analysis_空间分析.md)
+- [WebGIS](WebGIS.md)
+- [OGC](OGC_开放地理空间信息联盟.md)

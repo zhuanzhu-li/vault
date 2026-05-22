@@ -3,12 +3,12 @@ title: Creational Patterns（创建型模式）
 type: concept
 tags: [java, design-patterns, gof, creational]
 sources:
-  - "[[raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng]]"
+  - "[2026-05-22-java-design-patterns-liaoxuefeng](raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng.md)"
 ---
 
 # Creational Patterns（创建型模式）
 
-创建型模式是 [[GoF Design Patterns_GoF设计模式|GoF 设计模式]] 的第一大类，关注**如何创建对象**。其核心思想是将对象的**创建与使用相分离**，使两者能相对独立地变换。
+创建型模式是 [GoF 设计模式](GoF%20Design%20Patterns_GoF设计模式.md) 的第一大类，关注**如何创建对象**。其核心思想是将对象的**创建与使用相分离**，使两者能相对独立地变换。
 
 ## 五种模式
 
@@ -24,6 +24,6 @@ sources:
 
 ## Related
 
-- [[GoF Design Patterns_GoF设计模式|GoF 设计模式]] — 设计模式总览
-- [[Structural Patterns_结构型模式|结构型模式]] — 对象的组合与结构
-- [[Behavioral Patterns_行为型模式|行为型模式]] — 对象的协作与职责分配
+- [GoF 设计模式](GoF%20Design%20Patterns_GoF设计模式.md) — 设计模式总览
+- [结构型模式](Structural%20Patterns_结构型模式.md) — 对象的组合与结构
+- [行为型模式](Behavioral%20Patterns_行为型模式.md) — 对象的协作与职责分配

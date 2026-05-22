@@ -82,9 +82,9 @@ The GeoTools User Guide provides [tutorials introducing spatial concepts](https:
 
 ## 百科链接
 
-- [[GeoTools Architecture_GeoTools架构|GeoTools 架构]]
-- [[JTS_Java Topology Suite|JTS]]
-- [[CQL_Common Query Language|CQL]]
-- [[GeoTools]]
-- [[OSGeo_开源地理空间基金会|OSGeo]]
-- [[WebGIS]]
+- [GeoTools 架构](GeoTools%20Architecture_GeoTools架构.md)
+- [JTS](JTS_Java%20Topology%20Suite.md)
+- [CQL](CQL_Common%20Query%20Language.md)
+- [GeoTools](GeoTools.md)
+- [OSGeo](OSGeo_开源地理空间基金会.md)
+- [WebGIS](WebGIS.md)

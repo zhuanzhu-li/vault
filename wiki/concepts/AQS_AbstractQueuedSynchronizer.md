@@ -41,4 +41,4 @@ AQS 的模板方法（如 `acquire()` 和 `release()`）会自动调用上述重
 
 ## 相关链接
 - 依赖于 AQS 的同步组件：`ReentrantLock`、`Semaphore`、`CountDownLatch`
-- 底层实现依赖：[[Java Memory Model_Java 内存模型]]、[[Volatile_Volatile关键字]]、CAS (Compare-And-Swap)
+- 底层实现依赖：[Java Memory Model_Java 内存模型](Java%20Memory%20Model_Java%20内存模型.md)、[Volatile_Volatile关键字](Volatile_Volatile关键字.md)、CAS (Compare-And-Swap)

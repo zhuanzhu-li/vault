@@ -6,7 +6,7 @@ aliases:
   - User Data Ownership
   - 用户数据所有权
 sources:
-  - "[[raw/clippings/2026-05-20-file-over-app]]"
+  - "[2026-05-20-file-over-app](raw/clippings/2026-05-20-file-over-app.md)"
 ---
 
 # 用户数据所有权
@@ -22,10 +22,10 @@ sources:
 ## 恢复所有权的方式
 
 - 可复制、备份与版本管理的本地磁盘文件
-- [[Open File Formats_开放文件格式|开放文件格式]]与[[Plain Text Knowledge Base_纯文本知识库|纯文本知识库]]惯例
-- 符合[[File Over App_文件优于应用|文件优于应用]]、而非攫取数据的工具
+- [开放文件格式](Open%20File%20Formats_开放文件格式.md)与[纯文本知识库](Plain%20Text%20Knowledge%20Base_纯文本知识库.md)惯例
+- 符合[文件优于应用](File%20Over%20App_文件优于应用.md)、而非攫取数据的工具
 
 ## 相关
 
-- [[File Over App_文件优于应用|文件优于应用]]
-- [[Digital Durability_数字耐久性|数字耐久性]]
+- [文件优于应用](File%20Over%20App_文件优于应用.md)
+- [数字耐久性](Digital%20Durability_数字耐久性.md)

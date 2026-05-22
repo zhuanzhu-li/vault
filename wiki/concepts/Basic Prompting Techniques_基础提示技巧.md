@@ -3,14 +3,14 @@ title: Basic Prompting Techniques（基础提示技巧）
 type: concept
 tags: [ai, llm, prompt-engineering]
 sources:
-  - "[[raw/clippings/2026-05-21-ai-harness-engineering-conversation]]"
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
-  - "[[raw/clippings/2026-05-21-spring-ai]]"
+  - "[2026-05-21-ai-harness-engineering-conversation](raw/clippings/2026-05-21-ai-harness-engineering-conversation.md)"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
+  - "[2026-05-21-spring-ai](raw/clippings/2026-05-21-spring-ai.md)"
 ---
 
 # Basic Prompting Techniques（基础提示技巧）
 
-基础提示技巧是 [[Prompt Engineering]] 中最底层、最通用的交互模式，不需要复杂推理链路即可生效。
+基础提示技巧是 [Prompt Engineering](Prompt%20Engineering.md) 中最底层、最通用的交互模式，不需要复杂推理链路即可生效。
 
 ## 四种基础模式
 
@@ -21,6 +21,6 @@ sources:
 
 ## Related
 
-- [[Prompt Engineering]] — 提示词工程整体方法论
-- [[Chain of Thought]] — 进阶推理策略
-- [[Output Control_输出控制|输出控制]] — 控制 AI 输出格式与随机性
+- [Prompt Engineering](Prompt%20Engineering.md) — 提示词工程整体方法论
+- [Chain of Thought](Chain%20of%20Thought.md) — 进阶推理策略
+- [输出控制](Output%20Control_输出控制.md) — 控制 AI 输出格式与随机性

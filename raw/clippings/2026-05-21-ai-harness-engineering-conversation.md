@@ -29,6 +29,6 @@ Harness Engineering（驾驭工程）在此语境下指的是当前使用 AI 编
 
 ## 百科链接
 
-- [[AI Harness Engineering]]
-- [[Coding Harness]]
-- [[Process Harness]]
+- [AI Harness Engineering](AI%20Harness%20Engineering.md)
+- [Coding Harness](Coding%20Harness.md)
+- [Process Harness](Process%20Harness.md)

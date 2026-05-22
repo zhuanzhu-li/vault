@@ -8,7 +8,7 @@ sources: []
 # ArrayList
 
 
-`ArrayList` 是 [[Java Collection Framework_Java集合框架|Java 集合框架]]中 `List` 接口的主要实现类之一，底层基于**动态数组**实现。
+`ArrayList` 是 [Java 集合框架](Java%20Collection%20Framework_Java集合框架.md)中 `List` 接口的主要实现类之一，底层基于**动态数组**实现。
 
 
 ## 核心特性

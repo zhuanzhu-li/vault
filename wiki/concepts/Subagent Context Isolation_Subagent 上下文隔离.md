@@ -6,12 +6,12 @@ aliases:
   - Subagent Context Isolation
   - Subagent 上下文隔离
 sources:
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
 ---
 
 # Subagent 上下文隔离
 
-将**高 token 消耗、但主会话只需摘要**的操作放到 [[Claude Code_Claude Code|Claude Code]] subagent 的独立 context 中执行，避免主对话被撑满并触发 [[Context Compact_上下文压缩|上下文压缩]]。
+将**高 token 消耗、但主会话只需摘要**的操作放到 [Claude Code](Claude%20Code_Claude%20Code.md) subagent 的独立 context 中执行，避免主对话被撑满并触发 [上下文压缩](Context%20Compact_上下文压缩.md)。
 
 ## 原则
 
@@ -29,7 +29,7 @@ sources:
 
 ## 与 SKILL 的配合
 
-SKILL 文件不在主对话全文加载；由 subagent 内部读取 SKILL 执行，主会话只收产出路径与结论——配合 [[DW AI Workflow_数仓 AI 工作流|数仓 AI 工作流]]。
+SKILL 文件不在主对话全文加载；由 subagent 内部读取 SKILL 执行，主会话只收产出路径与结论——配合 [数仓 AI 工作流](DW%20AI%20Workflow_数仓%20AI%20工作流.md)。
 
 ## 预期效果
 
@@ -37,5 +37,5 @@ SKILL 文件不在主对话全文加载；由 subagent 内部读取 SKILL 执行
 
 ## 相关
 
-- [[Harness Engineering_Harness 工程|Harness 工程]]
-- [[Context Compact_上下文压缩|上下文压缩]]
+- [Harness 工程](Harness%20Engineering_Harness%20工程.md)
+- [上下文压缩](Context%20Compact_上下文压缩.md)

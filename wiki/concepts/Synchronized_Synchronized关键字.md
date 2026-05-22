@@ -14,7 +14,7 @@ sources: []
 
 ## 在 JMM 下提供的并发保证
 
-在 [[Java Memory Model_Java 内存模型|JMM]] 的规范下，`synchronized` 提供了两项核心保证：
+在 [JMM](Java%20Memory%20Model_Java%20内存模型.md) 的规范下，`synchronized` 提供了两项核心保证：
 1. **原子性 (Atomicity)**：确保同步块内的操作被视为一个不可分割的整体，不会被其他线程中断。
 2. **可见性 (Visibility)**：根据 JMM 的管程锁定规则（Monitor Lock Rule），对一个锁的解锁（unlock）先行发生于（happens-before）随后对同一个锁的加锁（lock）。这意味着一个线程在释放锁之前对共享变量所做的修改，对随后获取同一把锁的线程是立即可见的。
 
@@ -52,9 +52,9 @@ JDK 1.6 引入了大量的优化机制（如锁消除、锁粗化），最核心
 
 ## 与 Volatile 的对比
 
-- [[Volatile_Volatile关键字|Volatile]]：是一种极轻量的同步机制。只能保证变量的**可见性**和**有序性**，**不保证原子性**。不会引起线程上下文切换。
+- [Volatile](Volatile_Volatile关键字.md)：是一种极轻量的同步机制。只能保证变量的**可见性**和**有序性**，**不保证原子性**。不会引起线程上下文切换。
 - `synchronized`：是重量级（尽管有锁升级优化）的同步机制。能同时保证**原子性**、**可见性**和**有序性**。竞争激烈时会导致线程挂起。
 
 ## 相关链接
-- 理论基础：[[Java Memory Model_Java 内存模型]]
-- 另一种可见性机制：[[Volatile_Volatile关键字]]
+- 理论基础：[Java Memory Model_Java 内存模型](Java%20Memory%20Model_Java%20内存模型.md)
+- 另一种可见性机制：[Volatile_Volatile关键字](Volatile_Volatile关键字.md)

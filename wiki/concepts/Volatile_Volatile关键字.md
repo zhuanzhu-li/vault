@@ -10,7 +10,7 @@ sources: []
 
 # Volatile 关键字
 
-`volatile` 是 Java 提供的一种轻量级的同步机制。在 [[Java Memory Model_Java 内存模型|JMM]] 的规范下，它主要用来解决多线程环境下的变量**可见性**和**有序性**问题。
+`volatile` 是 Java 提供的一种轻量级的同步机制。在 [JMM](Java%20Memory%20Model_Java%20内存模型.md) 的规范下，它主要用来解决多线程环境下的变量**可见性**和**有序性**问题。
 
 ## 核心特性
 
@@ -23,7 +23,7 @@ sources: []
 - **底层原理**：通过在汇编指令层面插入**内存屏障 (Memory Barrier)** 来实现。写操作后插入 StoreLoad 屏障，读操作前插入 LoadLoad 屏障。
 
 ### 3. 不保证原子性 (No Atomicity)
-`volatile` 只能保证单次读/写的原子性。对于复合操作（如 `i++`），`volatile` 无法保证其在多线程下的安全。如果需要原子性复合操作，应使用 [[Synchronized]] 或 `java.util.concurrent.atomic` 包下的原子类。
+`volatile` 只能保证单次读/写的原子性。对于复合操作（如 `i++`），`volatile` 无法保证其在多线程下的安全。如果需要原子性复合操作，应使用 [Synchronized](Synchronized_Synchronized关键字.md) 或 `java.util.concurrent.atomic` 包下的原子类。
 
 ## 典型应用场景
 
@@ -53,5 +53,5 @@ sources: []
    ```
 
 ## 相关链接
-- 理论基础：[[Java Memory Model_Java 内存模型|Java 内存模型]]
-- 锁机制：[[Synchronized_Synchronized关键字]]
+- 理论基础：[Java 内存模型](Java%20Memory%20Model_Java%20内存模型.md)
+- 锁机制：[Synchronized_Synchronized关键字](Synchronized_Synchronized关键字.md)

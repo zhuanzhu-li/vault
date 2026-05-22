@@ -43,5 +43,5 @@ G1 的收集过程大致分为以下四个步骤：
 | **适用场景** | 中等规模内存（通常 4GB 以内） | 大容量内存（8GB 以上更显优势）、多核处理器 |
 
 ## 相关链接
-- JVM 调优与参数：[[JVM Tuning_JVM调优]]
-- 内存物理区域：[[JVM Run-Time Data Areas_JVM 运行时数据区]]
+- JVM 调优与参数：[JVM Tuning_JVM调优](JVM%20Tuning_JVM调优.md)
+- 内存物理区域：[JVM Run-Time Data Areas_JVM 运行时数据区](JVM%20Run-Time%20Data%20Areas_JVM%20运行时数据区.md)

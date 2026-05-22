@@ -15,7 +15,7 @@ Java 集合框架提供了一套性能优良、使用方便的接口和类，用
 ### 1. Collection 接口
 用于存储单一元素，主要有三个子接口：
 
-- **List**：有序、可重复。主要实现类有 [[ArrayList_ArrayList|ArrayList]]、`LinkedList`、`Vector`。
+- **List**：有序、可重复。主要实现类有 [ArrayList](ArrayList_ArrayList.md)、`LinkedList`、`Vector`。
 - **Set**：无序、不可重复。主要实现类有 `HashSet`、`LinkedHashSet`、`TreeSet`。
 - **Queue**：队列接口，按特定规则（如FIFO）确定元素的顺序。主要实现类有 `PriorityQueue`、`ArrayDeque`。
 
@@ -23,7 +23,7 @@ Java 集合框架提供了一套性能优良、使用方便的接口和类，用
 ### 2. Map 接口
 用于存储键值对（Key-Value），Key 不可重复，Value 可重复。
 
-主要实现类有 [[HashMap_HashMap|HashMap]]、`LinkedHashMap`、`TreeMap`、[[ConcurrentHashMap_ConcurrentHashMap|ConcurrentHashMap]]、`Hashtable`。
+主要实现类有 [HashMap](HashMap_HashMap.md)、`LinkedHashMap`、`TreeMap`、[ConcurrentHashMap](ConcurrentHashMap_ConcurrentHashMap.md)、`Hashtable`。
 
 
 ## 常见面试考点

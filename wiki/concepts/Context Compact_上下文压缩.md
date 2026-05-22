@@ -7,12 +7,12 @@ aliases:
   - 上下文压缩
   - auto-compact
 sources:
-  - "[[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]]"
+  - "[2026-05-20-claude-code-harness-dw-dewu](raw/clippings/2026-05-20-claude-code-harness-dw-dewu.md)"
 ---
 
 # 上下文压缩
 
-[[Claude Code_Claude Code|Claude Code]] 的 **auto-compact** 机制：当对话 token 接近上限（约 **95%**）时，将历史替换为摘要，体积可降至约 **12%**。
+[Claude Code](Claude%20Code_Claude%20Code.md) 的 **auto-compact** 机制：当对话 token 接近上限（约 **95%**）时，将历史替换为摘要，体积可降至约 **12%**。
 
 ## 会丢失什么
 
@@ -28,9 +28,9 @@ sources:
 
 ## 应对策略
 
-不依赖口头约束，而使用 [[Project Context Persistence_项目上下文持久化|项目上下文持久化]]（CLAUDE.md、Memory）与 [[Subagent Context Isolation_Subagent 上下文隔离|Subagent 上下文隔离]]，由 [[Harness Engineering_Harness 工程|Harness 工程]] 统筹。
+不依赖口头约束，而使用 [项目上下文持久化](Project%20Context%20Persistence_项目上下文持久化.md)（CLAUDE.md、Memory）与 [Subagent 上下文隔离](Subagent%20Context%20Isolation_Subagent%20上下文隔离.md)，由 [Harness 工程](Harness%20Engineering_Harness%20工程.md) 统筹。
 
 ## 相关
 
-- [[Harness Engineering_Harness 工程|Harness 工程]]
-- [[Semantic Data Accuracy_语义数据准确率|语义数据准确率]]
+- [Harness 工程](Harness%20Engineering_Harness%20工程.md)
+- [语义数据准确率](Semantic%20Data%20Accuracy_语义数据准确率.md)

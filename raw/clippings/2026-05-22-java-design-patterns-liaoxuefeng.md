@@ -1,8 +1,10 @@
 ---
-title: "Java设计模式 - 廖雪峰教程"
-source-url: "https://liaoxuefeng.com/books/java/design-patterns/index.html"
-captured-date: "2026-05-22"
-author: "廖雪峰"
+title: Java设计模式 - 廖雪峰教程
+source-url: https://liaoxuefeng.com/books/java/design-patterns/index.html
+captured-date: 2026-05-22
+author: 廖雪峰
+tags:
+  - java
 ---
 
 # Java 设计模式（廖雪峰教程）

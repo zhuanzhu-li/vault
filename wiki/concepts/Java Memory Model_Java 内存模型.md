@@ -13,7 +13,7 @@ sources: []
 
 Java 内存模型（JMM）是 Java 虚拟机规范中定义的一种并发模型，主要用于屏蔽各种硬件和操作系统的内存访问差异，以实现让 Java 程序在各种平台下都能达到一致的并发内存访问效果。
 
-> **注意区分**：JMM 经常与 [[JVM Run-Time Data Areas_JVM 运行时数据区|JVM 运行时数据区]]（堆、栈、方法区等）混淆。JMM 讨论的是**多线程并发**下的可见性、有序性和原子性问题；而运行时数据区讨论的是 JVM **内存的物理划分**。
+> **注意区分**：JMM 经常与 [JVM 运行时数据区](JVM%20Run-Time%20Data%20Areas_JVM%20运行时数据区.md)（堆、栈、方法区等）混淆。JMM 讨论的是**多线程并发**下的可见性、有序性和原子性问题；而运行时数据区讨论的是 JVM **内存的物理划分**。
 
 ## 核心抽象结构
 
@@ -42,5 +42,5 @@ JMM 将内存划分为两个部分：
 - **常见规则**：程序次序规则、管程锁定规则（解锁先行发生于加锁）、`volatile` 变量规则（写先行发生于读）、传递性等。
 
 ## 相关链接
-- 物理内存划分：[[JVM Run-Time Data Areas_JVM 运行时数据区]]
-- 并发关键字：[[Volatile]]、[[Synchronized]] (待完善)
+- 物理内存划分：[JVM Run-Time Data Areas_JVM 运行时数据区](JVM%20Run-Time%20Data%20Areas_JVM%20运行时数据区.md)
+- 并发关键字：[Volatile_Volatile关键字](Volatile_Volatile关键字.md)、[Synchronized](Synchronized_Synchronized关键字.md)

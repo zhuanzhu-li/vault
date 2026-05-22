@@ -2,7 +2,7 @@
 
 基于 **文件优于应用**（[File over app](https://stephango.com/file-over-app)）理念构建的 Obsidian 知识库：原始资料由你策展，百科由 AI 维护，工作笔记人机协作。全部内容以 Markdown 文件存储，可用任意编辑器阅读。
 
-**入口：** 在 Obsidian 中打开 [[Wiki Index_维基索引|维基索引]]。
+**入口：** 在 Obsidian 中打开 [维基索引](Wiki%20Index_维基索引.md)。
 
 ---
 
@@ -41,7 +41,7 @@ vault/
 
 | 区域 | 路径 | 谁维护 | 规则摘要 |
 |------|------|--------|----------|
-| **原始资料** | `raw/` | 你 | Agent **不得**编辑、重命名或移动；仅可阅读并通过 `[[wikilinks]]` 引用 |
+| **原始资料** | `raw/` | 你 | Agent **不得**编辑、重命名或移动；仅可阅读并通过 `[wikilinks](wikilinks)` 引用 |
 | **百科** | `wiki/` | AI | 概念提炼、实体卡片、索引；你很少手改，有变更需求可让 AI 重新生成 |
 | **工作区** | `dev/` | 人机协作 | ADR、复盘、项目片段；**修改已有 ADR 前须你明确确认** |
 
@@ -62,7 +62,7 @@ vault/
 |--------|--------|----------|
 | `concepts/` | `concept` | 文件优于应用、数字耐久性 |
 | `entities/` | `entity` | 斯蒂芬·安戈、黑曜石（Obsidian） |
-| 根目录 | `synthesis` | [[Wiki Index_维基索引\|维基索引]] |
+| 根目录 | `synthesis` | [维基索引](Wiki%20Index_维基索引%5C) |
 
 每页必须包含 frontmatter（`title`、`type`、`tags`、`sources`），且正文至少有一个指向其他页面的 wikilink。
 
@@ -95,12 +95,12 @@ wiki/Wiki Index_维基索引.md
 **链接写法：**
 
 ```markdown
-[[File Over App_文件优于应用|文件优于应用]]
+[文件优于应用](File%20Over%20App_文件优于应用.md)
 ```
 
 - 完整路径保证链接稳定
 - `|中文` 控制显示文字
-- frontmatter 中的 `aliases` 支持简写 `[[文件优于应用]]`
+- frontmatter 中的 `aliases` 支持简写 `[文件优于应用](文件优于应用)`
 
 **剪藏文件** 使用日期 + 英文 slug：
 
@@ -123,7 +123,7 @@ aliases:
   - File Over App
   - 文件优于应用
 sources:
-  - "[[raw/clippings/2026-05-20-file-over-app]]"
+  - "[2026-05-20-file-over-app](raw/clippings/2026-05-20-file-over-app.md)"
 ---
 ```
 
@@ -153,7 +153,7 @@ sources: []
 ---
 ```
 
-`tags` 使用 kebab-case。内部链接一律用 `[[wikilinks]]`，不要用 `[text](path.md)`。
+`tags` 使用 kebab-case。内部链接一律用 `[wikilinks](wikilinks)`，不要用 `[text](path.md)`。
 
 ---
 
@@ -167,7 +167,7 @@ sources: []
 4. **计划** — 影响超过 5 个文件时先展示计划、等待批准
 5. **写入百科** — 新建或更新 `wiki/concepts/`、`wiki/entities/`
 6. **链接** — 剪藏 ↔ 百科双向 wikilink
-7. **更新索引** — [[Wiki Index_维基索引|维基索引]]
+7. **更新索引** — [维基索引](Wiki%20Index_维基索引.md)
 8. **报告** — 列出新建/修改的文件
 
 命令定义见 `.claude/commands/wiki-ingest.md`。
@@ -195,20 +195,20 @@ sources: []
 
 **已导入剪藏：**
 
-- [[raw/clippings/2026-05-20-file-over-app|2026-05-20-file-over-app]] — *文件优于应用*（Steph Ango，2023）
+- [2026-05-20-file-over-app](raw/clippings/2026-05-20-file-over-app.md) — *文件优于应用*（Steph Ango，2023）
 
 **百科概念（6）：** 文件优于应用、数字耐久性、软件易逝性、用户数据所有权、纯文本知识库、开放文件格式
 
 **百科实体（2）：** 斯蒂芬·安戈、黑曜石（Obsidian）
 
-完整列表见 [[Wiki Index_维基索引|维基索引]]。
+完整列表见 [维基索引](Wiki%20Index_维基索引.md)。
 
 ---
 
 ## 快速开始
 
 1. 用 **Obsidian** 打开本文件夹作为库
-2. 从 [[Wiki Index_维基索引|维基索引]] 或图谱浏览已有笔记
+2. 从 [维基索引](Wiki%20Index_维基索引.md) 或图谱浏览已有笔记
 3. 阅读 `raw/clippings/` 中的剪藏原文
 4. 在 Cursor 中执行 `/wiki-ingest <URL>` 导入新文章
 5. 工作相关笔记写入 `dev/`（与 AI 协作时注意 ADR 修改须先确认）
