@@ -36,6 +36,13 @@ sources: []
 - [[Structured Outputs]] — 结构化输出，将 AI 生成映射为结构化数据（如 POJO）
 - [[ChatClient API]] — 用于与 AI 聊天模型通信的流畅 API
 
+### 设计模式
+
+- [[GoF Design Patterns_GoF设计模式|GoF 设计模式]] — 四人帮 23 种经典面向对象设计模式总览
+- [[Creational Patterns_创建型模式|创建型模式]] — 工厂方法、抽象工厂、建造者、原型、单例
+- [[Structural Patterns_结构型模式|结构型模式]] — 适配器、桥接、组合、装饰器、外观、享元、代理
+- [[Behavioral Patterns_行为型模式|行为型模式]] — 责任链、命令、解释器、迭代器、中介、备忘录、观察者、状态、策略、模板方法、访问者
+
 ### 数据库
 
 - [[PostgreSQL_PostgreSQL|PostgreSQL]] — 开源对象关系型数据库，MVCC、丰富索引类型与扩展生态
@@ -93,6 +100,7 @@ sources: []
 - [[Broadcom]] — 跨国科技公司，Spring 生态系统所有者
 - [[OpenAI]] — 人工智能研究实验室和公司，AI 模型主要提供商
 - [[Prompt Engineering]] — 提示词工程，设计和优化 LLM 输入提示的方法论
+- [[GoF Design Patterns_GoF设计模式|GoF 设计模式]] — 四人帮 23 种经典设计模式，含创建型/结构型/行为型三大类
 
 ## 已导入来源
 
@@ -104,3 +112,4 @@ sources: []
 - [[raw/clippings/2026-05-21-spring-ai]] — Spring, 2026-05-21
 - [[raw/clippings/2026-05-22-postgresql-interview-questions]] — AI Agent, 2026-05-22
 - [[raw/clippings/2026-05-22-postgresql-deep-dive]] — AI Agent, 2026-05-22
+- [[raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng]] — 廖雪峰，2026-05-22
