@@ -52,7 +52,21 @@ sources: []
   - [ ] 讲讲 CMS 和 G1 垃圾收集器的区别？G1 的核心原理是什么？
     👉 核心原理与对比见：[[G1 Garbage Collector_G1 收集器]]
 
-## 三、框架与中间件 (待完善)
+## 三、Java 集合框架 (Collections)
+
+- [x] **集合基础与 List**
+  - [x] Java 集合框架有哪些核心接口？
+    👉 核心原理见：[[Java Collection Framework_Java集合框架]]
+  - [x] `ArrayList` 和 `LinkedList` 的区别是什么？`ArrayList` 的扩容机制是怎样的？
+    👉 核心原理见：[[ArrayList_ArrayList]]
+
+- [x] **Map 体系**
+  - [x] 讲讲 `HashMap` 的底层数据结构（JDK 1.7 与 JDK 1.8 的区别）？扩容机制是怎样的？
+    👉 核心原理见：[[HashMap_HashMap]]
+  - [x] `HashMap` 为什么是非线程安全的？`ConcurrentHashMap` 是如何保证线程安全的？
+    👉 核心原理见：[[ConcurrentHashMap_ConcurrentHashMap]]
+
+## 四、框架与中间件 (待完善)
 *等待日常学习或刷题时增量补充...*
 
 - [ ] **Spring / Spring Boot**

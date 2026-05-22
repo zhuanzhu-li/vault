@@ -1,7 +1,0 @@
-feat(wiki): 导入 Spring AI 相关文档并更新 wiki-ingest 命令
-
-- 在 wiki-ingest 命令中添加了将内容翻译为中文的规则
-- 导入了关于 Spring AI 的剪报 (2026-05-21-spring-ai.md)
-- 新增了 Spring AI, RAG, 向量数据库, 结构化输出, ChatClient API 等概念
-- 新增了 Broadcom, OpenAI, Spring Framework 等实体
-- 更新了维基索引以包含上述新增内容
