@@ -36,6 +36,12 @@ sources: []
 - [[Structured Outputs]] — 结构化输出，将 AI 生成映射为结构化数据（如 POJO）
 - [[ChatClient API]] — 用于与 AI 聊天模型通信的流畅 API
 
+### 数据库
+
+- [[PostgreSQL_PostgreSQL|PostgreSQL]] — 开源对象关系型数据库，MVCC、丰富索引类型与扩展生态
+- [[MVCC_MVCC|MVCC]] — 多版本并发控制，数据库 ACID 的隔离性与一致性基石
+- [[WAL_WAL|WAL 预写日志]] — 数据库事务持久性与崩溃恢复的核心机制
+
 ### 知识管理
 
 - [[File Over App_文件优于应用|文件优于应用]] — 哲学：控制文件，而非应用
@@ -51,7 +57,10 @@ sources: []
 - [[AI Harness Engineering]] — 规范 AI 编程助手的代码规范与流程引擎
 - [[Coding Harness]] — 代码层面的强制规则与架构约束
 - [[Process Harness]] — 利用思维链规范 AI 的研发与分析流程
+- [[Basic Prompting Techniques_基础提示技巧|基础提示技巧]] — 零样本、少样本、角色提示、系统提示
 - [[Chain of Thought]] — 引导语言模型逐步推理的提示词策略
+- [[Output Control_输出控制|输出控制]] — 结构化输出、约束解码、温度与采样参数
+- [[Prompt Pitfalls_提示词陷阱|提示词陷阱]] — 指令泄露、约束脆弱性、过度拟合、越狱攻击
 - [[Context Compact_上下文压缩|上下文压缩]] — 95% 触发；口头约束易丢失
 - [[AI Coding Hooks_编码 Hooks|编码 Hooks]] — PostToolUse / PreToolUse；exit 2 阻断
 - [[Subagent Context Isolation_Subagent 上下文隔离|Subagent 上下文隔离]] — 高 token 操作隔离
@@ -83,6 +92,7 @@ sources: []
 - [[Spring Framework]] — Java 平台的广泛应用框架和控制反转容器
 - [[Broadcom]] — 跨国科技公司，Spring 生态系统所有者
 - [[OpenAI]] — 人工智能研究实验室和公司，AI 模型主要提供商
+- [[Prompt Engineering]] — 提示词工程，设计和优化 LLM 输入提示的方法论
 
 ## 已导入来源
 
@@ -92,3 +102,5 @@ sources: []
 - [[raw/clippings/2026-05-20-claude-code-harness-dw-dewu]] — 丹克 / 得物技术，2026
 - [[raw/clippings/2026-05-21-geotools-user-guide]] — OSGeo, 2026-05-21
 - [[raw/clippings/2026-05-21-spring-ai]] — Spring, 2026-05-21
+- [[raw/clippings/2026-05-22-postgresql-interview-questions]] — AI Agent, 2026-05-22
+- [[raw/clippings/2026-05-22-postgresql-deep-dive]] — AI Agent, 2026-05-22
