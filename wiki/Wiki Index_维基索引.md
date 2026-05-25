@@ -49,6 +49,13 @@ sources: []
 - [MVCC](MVCC_MVCC.md) — 多版本并发控制，数据库 ACID 的隔离性与一致性基石
 - [WAL 预写日志](WAL_WAL.md) — 数据库事务持久性与崩溃恢复的核心机制
 
+### 大数据与分布式系统
+
+- [Apache HBase](Apache%20HBase_Apache%20HBase.md) — 运行于 HDFS 之上的分布式 NoSQL 大数据存储系统
+- [分布式计算](Distributed%20Computing_分布式计算.md) — 分布式系统的挑战、故障来源与八大谬误
+- [支持与测试预期](Support%20&%20Testing%20Expectations_支持与测试预期.md) — 开源项目中 supported/unsupported/tested/not tested 的术语体系
+- [负责任披露](Responsible%20Disclosure_负责任披露.md) — 安全漏洞的私有报告与公开披露实践
+
 ### 知识管理
 
 - [文件优于应用](File%20Over%20App_文件优于应用.md) — 哲学：控制文件，而非应用
@@ -101,6 +108,8 @@ sources: []
 - [OpenAI](OpenAI.md) — 人工智能研究实验室和公司，AI 模型主要提供商
 - [Prompt Engineering](Prompt%20Engineering.md) — 提示词工程，设计和优化 LLM 输入提示的方法论
 - [GoF 设计模式](GoF%20Design%20Patterns_GoF设计模式.md) — 四人帮 23 种经典设计模式，含创建型/结构型/行为型三大类
+- [Apache 软件基金会](Apache%20Software%20Foundation_Apache软件基金会.md) — 开源软件非营利组织，托管 HBase、Hadoop 等 350+ 项目
+- [Fumadocs](Fumadocs_Fumadocs.md) — 基于 MDX 的现代文档框架，驱动 HBase 官方文档站点
 
 ## 已导入来源
 
@@ -113,3 +122,4 @@ sources: []
 - [2026-05-22-postgresql-interview-questions](raw/clippings/2026-05-22-postgresql-interview-questions.md) — AI Agent, 2026-05-22
 - [2026-05-22-postgresql-deep-dive](raw/clippings/2026-05-22-postgresql-deep-dive.md) — AI Agent, 2026-05-22
 - [2026-05-22-java-design-patterns-liaoxuefeng](raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng.md) — 廖雪峰，2026-05-22
+- [2026-05-25-hbase-reference-guide-preface](raw/clippings/2026-05-25-hbase-reference-guide-preface.md) — Apache HBase Community，2026-05-25

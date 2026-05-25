@@ -5,7 +5,7 @@ tags: [interview, java, career]
 status: in-progress
 sources: []
 ---
-
+  
 # Java 面试复习计划
 
 > **[AI 协作指令]**
@@ -20,13 +20,13 @@ sources: []
 
 ## 进度总览
 
-| 专题 | 子文件 | 进度 |
-|---|---|---|
-| 并发编程与多线程 | [java-interview-concurrency](java-interview-concurrency.md) | 3 / 6 |
-| JVM 虚拟机体系 | [java-interview-jvm](java-interview-jvm.md) | 2 / 5 |
-| Java 集合框架 | [java-interview-collections](java-interview-collections.md) | ✅ 4 / 4 |
-| 设计模式 | [java-interview-design-patterns](java-interview-design-patterns.md) | 0 / 10 |
-| 框架与中间件 | [java-interview-frameworks](java-interview-frameworks.md) | PostgreSQL 14 / 14，其他待录入 |
+| 专题        | 子文件                                                                 | 进度                       |
+| --------- | ------------------------------------------------------------------- | ------------------------ |
+| 并发编程与多线程  | [java-interview-concurrency](java-interview-concurrency.md)         | 3 / 6                    |
+| JVM 虚拟机体系 | [java-interview-jvm](java-interview-jvm.md)                         | 2 / 5                    |
+| Java 集合框架 | [java-interview-collections](java-interview-collections.md)         | ✅ 4 / 4                  |
+| 设计模式      | [java-interview-design-patterns](java-interview-design-patterns.md) | 0 / 10                   |
+| 框架与中间件    | [java-interview-frameworks](java-interview-frameworks.md)           | PostgreSQL 14 / 14，其他待录入 |
 
 ## 专题索引
 
