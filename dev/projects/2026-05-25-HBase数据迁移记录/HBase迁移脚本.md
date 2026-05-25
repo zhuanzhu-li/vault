@@ -10,9 +10,6 @@ sources: []
 
 ```Python
 # 作用：hbase快照迁移表（兼容目标端Kerberos/无认证）
-# 创建者：唐志强
-# 创建时间：2024-09-12 10：00
-# 联系方式：1317667746@qq.com
 
 import subprocess
 import logging

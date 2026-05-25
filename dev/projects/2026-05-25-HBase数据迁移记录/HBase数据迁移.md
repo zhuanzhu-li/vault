@@ -10,7 +10,7 @@ sources: []
 
 
 ## 相关
-* [[Apache HBase_Apache HBase]]
-* [[HBase迁移脚本]]
+* [Apache HBase_Apache HBase](Apache%20HBase_Apache%20HBase.md)
+* [HBase迁移脚本](HBase迁移脚本.md)
 
 
