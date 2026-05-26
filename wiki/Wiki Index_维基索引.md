@@ -48,6 +48,16 @@ sources: []
 - [PostgreSQL](PostgreSQL_PostgreSQL.md) — 开源对象关系型数据库，MVCC、丰富索引类型与扩展生态
 - [MVCC](MVCC_MVCC.md) — 多版本并发控制，数据库 ACID 的隔离性与一致性基石
 - [WAL 预写日志](WAL_WAL.md) — 数据库事务持久性与崩溃恢复的核心机制
+- [MySQL 设计规约](MySQL%20Design%20Guidelines_MySQL设计规约.md) — 阿里巴巴MySQL建表、索引、SQL、ORM规范
+
+### 代码质量与工程规范
+
+- [代码质量规范](Code%20Quality%20Standards_代码质量规范.md) — 强制/推荐/参考三级约束力的编程规范体系
+- [Java 命名规范](Java%20Naming%20Conventions_Java命名规范.md) — 驼峰命名、常量命名、包名规范、领域模型命名
+- [异常处理规范](Exception%20Handling%20Standards_异常处理规范.md) — NPE防护、异常匹配、资源关闭规范
+- [日志规约](Logging%20Standards_日志规约.md) — 日志级别选择、输出规范、内容规范
+- [安全规约](Security%20Guidelines_安全规约.md) — 权限控制、数据脱敏、SQL注入防护、CSRF防护
+- [工程结构规约](Project%20Structure%20Standards_工程结构规约.md) — 应用分层、二方库依赖、服务器配置
 
 ### 大数据与分布式系统
 
@@ -99,9 +109,11 @@ sources: []
 - [GeoTools 架构](GeoTools%20Architecture_GeoTools架构.md) — Java GIS 开源库的核心架构
 - [JTS](JTS_Java%20Topology%20Suite.md) — Java 空间几何与拓扑计算库
 - [CQL](CQL_Common%20Query%20Language.md) — 地理空间通用查询语言
+- [GeoMesa](GeoMesa_GeoMesa.md) — 开源时空大数据引擎，为 HBase/Cassandra 提供时空索引
 
 ## 实体
 
+- [阿里巴巴](Alibaba_阿里巴巴.md) — 中国最大电商公司，Java开发手册发布方，p3c/Arthas/Druid/Nacos等开源工具贡献者
 - [Cursor](Cursor.md) — 深度集成 AI 功能的现代代码编辑器
 - [斯蒂芬·安戈](Steph%20Ango_斯蒂芬·安戈.md) — Obsidian CEO；*File over app* 作者
 - [黑曜石](Obsidian_黑曜石.md) — 本地优先笔记应用
@@ -134,3 +146,5 @@ sources: []
 - [2026-05-22-java-design-patterns-liaoxuefeng](raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng.md) — 廖雪峰，2026-05-22
 - [2026-05-25-hbase-reference-guide-preface](raw/clippings/2026-05-25-hbase-reference-guide-preface.md) — Apache HBase Community，2026-05-25
 - [2026-05-25-k8s-networking-subnet-to-iptables](raw/clippings/2026-05-25-k8s-networking-subnet-to-iptables.md) — User，2026-05-25
+- [2026-05-26-alibaba-java-development-manual](raw/clippings/2026-05-26-alibaba-java-development-manual.md) — 阿里巴巴集团技术团队，2026-05-26
+- [2026-05-26-geomesa-quickstart-hbase](raw/clippings/2026-05-26-geomesa-quickstart-hbase.md) — GeoMesa Community，2026-05-26
