@@ -56,6 +56,14 @@ sources: []
 - [支持与测试预期](Support%20&%20Testing%20Expectations_支持与测试预期.md) — 开源项目中 supported/unsupported/tested/not tested 的术语体系
 - [负责任披露](Responsible%20Disclosure_负责任披露.md) — 安全漏洞的私有报告与公开披露实践
 
+### 容器与编排
+
+- [Kubernetes 网络子网](Kubernetes%20网络子网_Kubernetes网络子网.md) — 三类子网（节点/Pod/Service CIDR）的划分与约束
+- [kube-proxy iptables 模式](kube-proxy%20iptables%20模式_kube-proxy%20iptables模式.md) — KUBE-SERVICES 链的 DNAT 负载均衡机制
+- [kube-proxy IPVS 模式](kube-proxy%20IPVS%20模式_kube-proxy%20IPVS模式.md) — 基于哈希表 O(1) 查找的替代模式，适合大规模集群
+- [内核网络参数](内核网络参数_内核网络参数.md) — bridge-nf-call-iptables、ip_forward 等关键 sysctl 配置
+- [ip-masq-agent](ip-masq-agent_ip-masq-agent.md) — 管理 Pod 访问外网的 SNAT 行为
+
 ### 知识管理
 
 - [文件优于应用](File%20Over%20App_文件优于应用.md) — 哲学：控制文件，而非应用
@@ -110,6 +118,8 @@ sources: []
 - [GoF 设计模式](GoF%20Design%20Patterns_GoF设计模式.md) — 四人帮 23 种经典设计模式，含创建型/结构型/行为型三大类
 - [Apache 软件基金会](Apache%20Software%20Foundation_Apache软件基金会.md) — 开源软件非营利组织，托管 HBase、Hadoop 等 350+ 项目
 - [Fumadocs](Fumadocs_Fumadocs.md) — 基于 MDX 的现代文档框架，驱动 HBase 官方文档站点
+- [Flannel](Flannel_Flannel.md) — 轻量级 CNI 网络插件，使用 VXLAN overlay 实现 Pod 跨节点通信
+- [Calico](Calico_Calico.md) — 支持 BGP 路由和网络策略的 CNI 网络插件
 
 ## 已导入来源
 
@@ -123,3 +133,4 @@ sources: []
 - [2026-05-22-postgresql-deep-dive](raw/clippings/2026-05-22-postgresql-deep-dive.md) — AI Agent, 2026-05-22
 - [2026-05-22-java-design-patterns-liaoxuefeng](raw/clippings/2026-05-22-java-design-patterns-liaoxuefeng.md) — 廖雪峰，2026-05-22
 - [2026-05-25-hbase-reference-guide-preface](raw/clippings/2026-05-25-hbase-reference-guide-preface.md) — Apache HBase Community，2026-05-25
+- [2026-05-25-k8s-networking-subnet-to-iptables](raw/clippings/2026-05-25-k8s-networking-subnet-to-iptables.md) — User，2026-05-25
