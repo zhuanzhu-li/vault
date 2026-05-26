@@ -16,168 +16,133 @@ import logging
 import paramiko
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ===================== 【配置区：全部改成你自己的】 =====================
-# 日志
-LOG_FILE = 'hbase_migration.log'
-logging.basicConfig(
-    level=logging.INFO,
-    filename=LOG_FILE,
-    filemode='a',
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
-# HBase 配置
-HBASE_SHELL_CMD = "hbase shell -n"
-HBASE_EXPORT_CMD = "hbase org.apache.hadoop.hbase.snapshot.ExportSnapshot"
-HBASE_QUEUE_NAME = "-D mapreduce.job.queuename=dtsw"
-HBASE_SRC_PATH = "hdfs://10.24.137.1:8020/hbase/"
-HBASE_DST_PATH = "hdfs://10.24.147.9:54310/hbase/"
-
-# SSH 源集群
-SSH_HOST = '10.24.139.126'
-SSH_PORT = 2236
-SSH_USERNAME = 'dtsw_user'
-
-# 表名文件
-TABLE_NAMES_FILE = '/app/tzq/hbasesynctable.txt'
-
-# ===================== 【通用开关：二选一即可】 =====================
-# True  = 目标端需要 Kerberos 认证
-# False = 目标端不需要认证（原始模式）
-NEED_KERBEROS = False
-
-# Kerberos 配置（只有 NEED_KERBEROS=True 时才需要填）
-KRB_PRINCIPAL = "dtsw_user@DTAD.COM"
-KRB_KEYTAB = "/app/tzq/dtsw_user.keytab"
-KRB_KINIT_CMD = f"kinit -kt {KRB_KEYTAB} {KRB_PRINCIPAL}"
-
-# 并发线程数
-MAX_WORKERS = 5
-# ====================================================================
-
-def kerberos_init():
-    """仅当需要 Kerberos 时执行"""
-    if not NEED_KERBEROS:
-        logging.info("✅ 目标端无需 Kerberos 认证")
-        return
-    
-    try:
-        logging.info("正在初始化 Kerberos 认证...")
-        subprocess.run(
-            KRB_KINIT_CMD,
-            shell=True,
-            check=True,
-            capture_output=True,
-            text=True
-        )
-        logging.info("✅ Kerberos 认证成功！")
-    except subprocess.CalledProcessError as e:
-        logging.error(f"❌ Kerberos kinit 失败: {e.stderr}")
-        raise Exception("Kerberos 认证失败，脚本退出")
-
 def execute_local_command(command):
-    """执行本地命令，自动兼容认证/无认证模式"""
+    """执行本地命令"""
     try:
-        # 根据开关自动拼接命令
-        if NEED_KERBEROS:
-            full_cmd = f"{KRB_KINIT_CMD} && {command}"
-        else:
-            full_cmd = command
-
         result = subprocess.run(
-            full_cmd,
+            command,
             shell=True,
             check=True,
             text=True,
             capture_output=True
         )
-        logging.info(f"本地命令成功: {command}")
+        logging.info(f"Local command executed successfully: {command}\nOutput: {result.stdout}")
         return result.stdout
     except subprocess.CalledProcessError as e:
-        logging.error(f"本地命令失败: {command}\n错误: {e.stderr}")
-        raise
+        logging.error(f"Error executing local command: {command}\nError: {e.stderr}")
 
-def execute_ssh_command(command):
-    """远程执行创建快照（源集群一般无kerberos）"""
+# 配置日志
+LOG_FILE = 'hbase_migration.log'
+logging.basicConfig(
+    level=logging.INFO,
+    filename=LOG_FILE,
+    filemode='w',
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# 在脚本开始前清空日志文件
+with open(LOG_FILE, 'w') as log_file:
+    log_file.write('')
+
+# HBase相关配置
+HBASE_SHELL_CMD = "hbase shell -n"
+HBASE_EXPORT_CMD = "hbase org.apache.hadoop.hbase.snapshot.ExportSnapshot"
+HBASE_QUEUE_NAME = "-D mapreduce.job.queuename=dtsw"
+HBASE_SRC_PATH = "hdfs://10.24.137.1:8020/apps/hbase/data"
+HBASE_DST_PATH = "hdfs://10.24.147.9:54310/apps/hbase/data"
+
+HBASE_HDFS_PATH = "/apps/hbase/data"
+
+# SSH配置
+SSH_HOST = '10.24.139.126'
+SSH_PORT = 2236
+SSH_USERNAME = 'dtsw_user'
+
+# 读取表名文件
+TABLE_NAMES_FILE = '/app/tzq/hbasesynctable.txt'
+
+
+def execute_ssh_command(host, username, command):
+    """通过SSH执行命令"""
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try:
-        client.connect(SSH_HOST, port=SSH_PORT, username=SSH_USERNAME, timeout=30)
+        client.connect(host, port=SSH_PORT, username=username)
         stdin, stdout, stderr = client.exec_command(command)
-        error = stderr.read().decode().strip()
-
+        output = stdout.read().decode()
+        error = stderr.read().decode()
         if error:
-            logging.error(f"SSH执行错误: {error}")
-            raise Exception(f"远程命令失败: {error}")
-
-        logging.info(f"SSH命令成功: {command}")
-        return stdout.read().decode()
+            print(f"Error executing command over SSH: {error}")
+            logging.error(f"Error executing command over SSH: {error}")
+        else:
+            print(f"Command executed successfully: {command}")
+            logging.info(f"Command executed successfully: {command}")
+        return output
+    except Exception as e:
+        print(f"Failed to execute command over SSH: {e}")
+        logging.error(f"Failed to execute command over SSH: {e}")
     finally:
         client.close()
 
+
 def execute_hbase_commands(tablename):
-    """单表迁移流程"""
+    """执行HBase相关的命令"""
     snapshot_name = f"{tablename}_snapshot"
-    logging.info(f"开始处理表: {tablename}")
+    # 创建快照，需要通过SSH远程执行
+    create_snapshot_cmd = f"echo \"snapshot 'DTSW:{tablename}', '{snapshot_name}'\" | {HBASE_SHELL_CMD}"
+    print(f"Executing remote command: {create_snapshot_cmd}")
+    logging.info(f"Executing remote command: {create_snapshot_cmd}")
+    output = execute_ssh_command(SSH_HOST, SSH_USERNAME, create_snapshot_cmd)
+    print(f"Command output: {output}")
+    logging.info(f"Command output: {output}")
 
-    try:
-        # 1. 远程创建快照
-        logging.info(f"创建快照: {snapshot_name}")
-        create_snapshot_cmd = f"echo \"snapshot 'DTSW:{tablename}', '{snapshot_name}'\" | {HBASE_SHELL_CMD}"
-        execute_ssh_command(create_snapshot_cmd)
+    # 其他命令可以直接在本地执行（假设这里的环境已经配置好了HBase Shell）
+    local_commands = [
+        # 删除快照
+        f"hadoop fs -rm -r {HBASE_HDFS_PATH}/{snapshot_name}",
+        f"hadoop fs -rm -r {HBASE_HDFS_PATH}/.tmp/{snapshot_name}",
+        # 导出快照
+        f"{HBASE_EXPORT_CMD} {HBASE_QUEUE_NAME} -snapshot {snapshot_name} -copy-from {HBASE_SRC_PATH} -copy-to {HBASE_DST_PATH}",
+        # 禁用表
+        f"echo \"disable 'DTSW:{tablename}'\" | {HBASE_SHELL_CMD}",
+        # 从快照恢复表
+        f"echo \"restore_snapshot '{snapshot_name}'\" | {HBASE_SHELL_CMD}",
+        # 启用表
+        f"echo \"enable 'DTSW:{tablename}'\" | {HBASE_SHELL_CMD}"
+    ]
 
-        # 2. 导出快照到目标集群
-        logging.info(f"导出快照 {snapshot_name}")
-        export_cmd = (
-            f"{HBASE_EXPORT_CMD} {HBASE_QUEUE_NAME} "
-            f"-snapshot {snapshot_name} "
-            f"-copy-from {HBASE_SRC_PATH} "
-            f"-copy-to {HBASE_DST_PATH}"
-        )
-        execute_local_command(export_cmd)
+    for cmd in local_commands:
+        print(f"Executing local command: {cmd}")
+        logging.info(f"Executing local command: {cmd}")
+        # 假设这里的环境已经配置好了HBase Shell
+        # 这里需要替换为实际执行本地命令的方法
+        output = execute_local_command(cmd)
 
-        # 3. 目标集群禁用表
-        logging.info(f"禁用表: DTSW:{tablename}")
-        disable_cmd = f"echo \"disable 'DTSW:{tablename}'\" | {HBASE_SHELL_CMD}"
-        execute_local_command(disable_cmd)
-
-        # 4. 恢复快照
-        logging.info(f"恢复快照: {snapshot_name}")
-        restore_cmd = f"echo \"restore_snapshot '{snapshot_name}'\" | {HBASE_SHELL_CMD}"
-        execute_local_command(restore_cmd)
-
-        # 5. 启用表
-        logging.info(f"启用表: DTSW:{tablename}")
-        enable_cmd = f"echo \"enable 'DTSW:{tablename}'\" | {HBASE_SHELL_CMD}"
-        execute_local_command(enable_cmd)
-
-        logging.info(f"✅ 表 {tablename} 迁移完成！")
-
-    except Exception as e:
-        logging.error(f"❌ 表 {tablename} 迁移失败: {str(e)}")
-        raise
 
 def main():
-    # 初始化认证（自动判断是否需要）
-    kerberos_init()
-
     # 读取表名
-    with open(TABLE_NAMES_FILE, 'r', encoding='utf-8') as f:
-        table_names = [line.strip() for line in f if line.strip()]
+    with open(TABLE_NAMES_FILE, 'r') as file:
+        table_names = [line.strip() for line in file if line.strip()]
+    
+    # 清空日志
+    with open(LOG_FILE, 'w') as file:
+        file.write('')
 
-    logging.info(f"总表数: {len(table_names)}")
-
-    # 多线程并发迁移
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {executor.submit(execute_hbase_commands, t): t for t in table_names}
+    # 使用线程池执行命令
+    max_workers = 5  # 根据实际情况调整最大工作线程数
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(execute_hbase_commands, tablename): tablename for tablename in table_names}
 
         for future in as_completed(futures):
-            table = futures[future]
+            tablename = futures[future]
             try:
                 future.result()
-                print(f"✅ 成功: {table}")
+                print(f"Finished processing table: {tablename}")
+                logging.info(f"Finished processing table: {tablename}")
             except Exception as exc:
-                print(f"❌ 失败: {table} | {exc}")
+                print(f"Failed to process table {tablename}: {exc}")
+                logging.error(f"Failed to process table {tablename}: {exc}")
+
 
 if __name__ == "__main__":
     main()
