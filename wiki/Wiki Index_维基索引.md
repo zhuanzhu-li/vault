@@ -50,6 +50,37 @@ sources: []
 - [WAL 预写日志](WAL_WAL.md) — 数据库事务持久性与崩溃恢复的核心机制
 - [MySQL 设计规约](MySQL%20Design%20Guidelines_MySQL设计规约.md) — 阿里巴巴MySQL建表、索引、SQL、ORM规范
 
+### 分布式系统与架构
+
+- [CAP 与 BASE 理论](CAP%20and%20BASE%20Theory_CAP与BASE理论.md) — CAP 三选二、BASE 柔性事务、分布式一致性
+- [分布式 ID 生成](Distributed%20ID%20Generation_分布式ID生成.md) — Snowflake、Leaf 号段、ULID 算法
+- [分布式锁](Distributed%20Lock_分布式锁.md) — Redis 分布式锁、RedLock、ZooKeeper 锁
+- [分布式事务](Distributed%20Transaction_分布式事务.md) — 2PC/3PC、TCC、Saga、Seata
+- [一致性哈希](Consistent%20Hashing_一致性哈希.md) — Hash 环、虚拟节点、数据迁移最小化
+- [接口幂等设计](Interface%20Idempotency%20Design_接口幂等设计.md) — Token机制、唯一索引、乐观锁
+- [延迟任务队列](Delayed%20Task%20Queue_延迟任务队列.md) — 时间轮算法、Redis ZSet、RabbitMQ 延迟消息
+- [缓存架构设计](Cache%20Architecture%20Design_缓存架构设计.md) — 穿透/击穿/雪崩、淘汰策略、容量规划
+
+### 系统设计与架构原则
+
+- [SOLID 原则](SOLID%20Principles_SOLID原则.md) — 单一职责、开闭、里氏替换、接口隔离、依赖倒置
+- [架构设计中的设计模式](Design%20Patterns%20in%20Architecture_架构设计中的设计模式.md) — 创建型/结构型/行为型模式分层应用
+- [领域驱动设计](Domain-Driven%20Design_领域驱动设计.md) — 聚合根、限界上下文、事件溯源
+
+### 微服务与云原生
+
+- [服务治理](Service%20Governance_服务治理.md) — 熔断降级、限流、负载均衡、服务发现
+- [配置中心](Configuration%20Center_配置中心.md) — Apollo、Nacos、热更新、多环境隔离
+- [API 网关](API%20Gateway_API网关.md) — Spring Cloud Gateway、路由、鉴权、限流
+- [Docker 容器化](Docker%20Containerization_Docker容器化.md) — 镜像构建、Compose 编排、网络存储
+- [nerdctl](nerdctl_nerdctl.md) — containerd 官方 CLI，Docker 兼容的高级容器运行时
+- [Kubernetes](Kubernetes_Kubernetes.md) — Pod/Service/Deployment、调度、网络、存储
+- [CI/CD 实践](CI%20CD%20Practices_CI-CD实践.md) — GitLab CI、Jenkins Pipeline、蓝绿部署、金丝雀发布
+
+### 高并发与性能
+
+- [秒杀系统架构](Seckill%20System%20Architecture_秒杀系统架构.md) — 流量削峰、库存扣减、MQ 异步下单、防刷
+
 ### 代码质量与工程规范
 
 - [代码质量规范](Code%20Quality%20Standards_代码质量规范.md) — 强制/推荐/参考三级约束力的编程规范体系
@@ -148,3 +179,4 @@ sources: []
 - [2026-05-25-k8s-networking-subnet-to-iptables](raw/clippings/2026-05-25-k8s-networking-subnet-to-iptables.md) — User，2026-05-25
 - [2026-05-26-alibaba-java-development-manual](raw/clippings/2026-05-26-alibaba-java-development-manual.md) — 阿里巴巴集团技术团队，2026-05-26
 - [2026-05-26-geomesa-quickstart-hbase](raw/clippings/2026-05-26-geomesa-quickstart-hbase.md) — GeoMesa Community，2026-05-26
+- [2026-05-26-nerdctl](raw/clippings/2026-05-26-nerdctl.md) — AI Agent & User，2026-05-26
