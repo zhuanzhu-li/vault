@@ -118,6 +118,7 @@ sources: []
 
 ### AI 编码与 Harness
 
+- [开发者学习策略](Developer%20Learning%20Strategies_开发者学习策略.md) — 开发者技能金字塔、刻意练习、知识管理体系
 - [Harness 工程](Harness%20Engineering_Harness%20工程.md) — Claude Code 宿主框架；hooks 确定性执行
 - [AI Harness Engineering](AI%20Harness%20Engineering.md) — 规范 AI 编程助手的代码规范与流程引擎
 - [Coding Harness](Coding%20Harness.md) — 代码层面的强制规则与架构约束
@@ -184,3 +185,4 @@ sources: []
 - [2026-05-26-nerdctl](raw/clippings/2026-05-26-nerdctl.md) — AI Agent & User，2026-05-26
 - [2026-05-28-java-developer-roadmap](raw/clippings/2026-05-28-java-developer-roadmap.md) — roadmap.sh，2026-05-28
 - [2026-05-28-java-access-modifiers](raw/clippings/2026-05-28-java-access-modifiers.md) — Jenkov，2026-05-28
+- [2026-05-28-dev-essentials](raw/clippings/2026-05-28-dev-essentials.md) — Jakob Jenkov，2026-05-28
