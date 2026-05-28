@@ -16,6 +16,8 @@ sources: []
 
 ### Java 体系与 JVM
 
+- [Java 编程语言](Java%20Programming%20Language_Java编程语言.md) — 跨平台面向对象语言，企业级开发首选
+- [Java 访问修饰符](Java%20Access%20Modifiers_Java访问修饰符.md) — private/default/protected/public 四种访问级别
 - [Java 集合框架](Java%20Collection%20Framework_Java集合框架.md) — Java 常用数据结构（List, Set, Queue, Map）的核心接口与体系
 - [ArrayList](ArrayList_ArrayList.md) — 基于动态数组实现的 List，查询快增删慢
 - [HashMap](HashMap_HashMap.md) — 基于哈希表实现的 Map，JDK 1.8 引入红黑树优化
@@ -180,3 +182,5 @@ sources: []
 - [2026-05-26-alibaba-java-development-manual](raw/clippings/2026-05-26-alibaba-java-development-manual.md) — 阿里巴巴集团技术团队，2026-05-26
 - [2026-05-26-geomesa-quickstart-hbase](raw/clippings/2026-05-26-geomesa-quickstart-hbase.md) — GeoMesa Community，2026-05-26
 - [2026-05-26-nerdctl](raw/clippings/2026-05-26-nerdctl.md) — AI Agent & User，2026-05-26
+- [2026-05-28-java-developer-roadmap](raw/clippings/2026-05-28-java-developer-roadmap.md) — roadmap.sh，2026-05-28
+- [2026-05-28-java-access-modifiers](raw/clippings/2026-05-28-java-access-modifiers.md) — Jenkov，2026-05-28
