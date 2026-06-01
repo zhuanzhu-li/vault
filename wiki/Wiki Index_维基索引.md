@@ -134,6 +134,24 @@ sources: []
 - [语义数据准确率](Semantic%20Data%20Accuracy_语义数据准确率.md) — 语义 × 规范覆盖度
 - [数仓 AI 工作流](DW%20AI%20Workflow_数仓%20AI%20工作流.md) — 8 步 SKILL 与 Harness 分工
 
+### AI 辅助交易
+
+- [宏观框架](宏观框架.md) — 变量关系图，向量拓扑，拆解资产核心驱动
+- [交易框架](交易框架.md) — 将市场研判转化为具体交易决策的系统方法论
+- [AI提示词工程](AI提示词工程.md) — 三种AI使用模板：变量拆解/情景推演/失效验证
+- [情境推演](情境推演.md) — 多变量情景分析，模拟市场路径
+- [宏观工作流](宏观工作流.md) — 每日固定流程，配套宏观框架的导航系统
+- [稳定决策系统](稳定决策系统.md) — 通过固定流程实现稳定判断，避免随机决策
+- [认知放大器](认知放大器.md) — AI作为个人底层认知的放大工具
+
+### AI 生产力系统
+
+- [AI时代生产力公式](AI时代生产力公式.md) — 生产力 = 人类层 × AI层，乘法效应
+- [用户操作系统](用户操作系统.md) — 限制AI的是用户自身，而非模型
+- [AI中枢调度器](AI中枢调度器.md) — AI作为hub连接万物，区别于回答器
+- [造工具](造工具.md) — 从用工具到创造工具的进阶
+- [AI生产力成熟度五级框架](AI生产力成熟度五级框架.md) — Level 0-5 的成长路径
+
 ### GIS 基础
 
 - [GIS 坐标系与地图投影](GIS%20Coordinate%20Systems_GIS坐标系.md) — WGS84、GCJ-02及Web Mercator等
@@ -154,6 +172,7 @@ sources: []
 - [得物](Dewu_得物.md) — 数仓 Harness 实践来源
 - [Claude Code](Claude%20Code_Claude%20Code.md) — Harness 宿主工具
 - [丹克](Danke_丹克.md) — 得物 Harness 文章作者
+- [大空神](大空神.md) — 交易者/AI实践者，系列文章原作者
 - [OGC](OGC_开放地理空间信息联盟.md) — 开放地理空间信息联盟，制定 WMS/WFS 等标准
 - [GeoTools](GeoTools.md) — Java WebGIS 主流开源工具库
 - [OSGeo](OSGeo_开源地理空间基金会.md) — 开源地理空间基金会
@@ -186,3 +205,6 @@ sources: []
 - [2026-05-28-java-developer-roadmap](raw/clippings/2026-05-28-java-developer-roadmap.md) — roadmap.sh，2026-05-28
 - [2026-05-28-java-access-modifiers](raw/clippings/2026-05-28-java-access-modifiers.md) — Jenkov，2026-05-28
 - [2026-05-28-dev-essentials](raw/clippings/2026-05-28-dev-essentials.md) — Jakob Jenkov，2026-05-28
+- [2026-06-01-ai-trading-framework](raw/clippings/2026-06-01-ai-trading-framework.md) — 微信公众平台，2026-06-01
+- [2026-06-01-ai-macro-workflow](raw/clippings/2026-06-01-ai-macro-workflow.md) — 微信公众平台，2026-06-01
+- [2026-06-01-ai-productivity-system](2026-06-01-ai-productivity-system.md) — 大空神，2026-03-07
