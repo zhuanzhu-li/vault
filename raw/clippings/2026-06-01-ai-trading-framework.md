@@ -9,6 +9,7 @@ tags:
   - 投资框架
   - 提示词工程
   - ai-trading
+  - trade
 sources:
   - "[raw/clippings/2026-06-01-ai-trading-framework](raw/clippings/2026-06-01-ai-trading-framework)"
 ---

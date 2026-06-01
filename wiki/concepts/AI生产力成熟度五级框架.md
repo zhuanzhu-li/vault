@@ -6,6 +6,7 @@ tags:
   - 成长路径
   - 能力评估
   - ai-trading
+  - trade
 sources:
   - "[2026-06-01-ai-productivity-system](2026-06-01-ai-productivity-system.md)"
 ---

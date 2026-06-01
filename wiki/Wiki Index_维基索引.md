@@ -152,6 +152,20 @@ sources: []
 - [造工具](造工具.md) — 从用工具到创造工具的进阶
 - [AI生产力成熟度五级框架](AI生产力成熟度五级框架.md) — Level 0-5 的成长路径
 
+### 股票投资指标
+
+- [ROE (净资产收益率)](ROE.md) — 股东权益回报率，最核心盈利指标
+- [ROIC (投入资本回报率)](ROIC.md) — 剔除杠杆后的真实回报
+- [杜邦分析](杜邦分析.md) — ROE三分解：净利率×周转率×杠杆
+- [PE (市盈率)](PE.md) — 估值最常用指标，回本年限
+- [PB (市净率)](PB.md) — 股价与净资产比值
+- [PEG比率](PEG比率.md) — PE与增速的比值
+- [股息率](股息率.md) — 分红与股价比值
+- [财务健康指标](财务健康指标.md) — 资产负债率、流动比率等
+- [现金流分析](现金流分析.md) — 利润质量验证
+- [营运能力指标](营运能力指标.md) — 存货/应收/资产周转
+- [成长性指标](成长性指标.md) — 营收/净利润增速、CAGR
+
 ### GIS 基础
 
 - [GIS 坐标系与地图投影](GIS%20Coordinate%20Systems_GIS坐标系.md) — WGS84、GCJ-02及Web Mercator等
@@ -208,3 +222,4 @@ sources: []
 - [2026-06-01-ai-trading-framework](raw/clippings/2026-06-01-ai-trading-framework.md) — 微信公众平台，2026-06-01
 - [2026-06-01-ai-macro-workflow](raw/clippings/2026-06-01-ai-macro-workflow.md) — 微信公众平台，2026-06-01
 - [2026-06-01-ai-productivity-system](2026-06-01-ai-productivity-system.md) — 大空神，2026-03-07
+- [2026-06-01-stock-investment-indicators](raw/clippings/2026-06-01-stock-investment-indicators.md) — 个人整理，2026-06-01

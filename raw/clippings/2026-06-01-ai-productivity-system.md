@@ -9,6 +9,7 @@ tags:
   - 系统构建
   - 个人成长
   - "#ai-trading"
+  - trade
 sources:
   - "[2026-06-01-ai-productivity-system](2026-06-01-ai-productivity-system.md)"
 ---

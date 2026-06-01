@@ -9,6 +9,7 @@ tags:
   - 宏观工作流
   - 决策系统
   - "#ai-trading"
+  - trade
 sources:
   - "[raw/clippings/2026-06-01-ai-macro-workflow](raw/clippings/2026-06-01-ai-macro-workflow)"
 ---
