@@ -58,11 +58,11 @@ vault/
 
 从 `raw/` 蒸馏出的结构化知识：
 
-| 子目录 | `type` | 内容示例 |
-|--------|--------|----------|
-| `concepts/` | `concept` | 文件优于应用、数字耐久性 |
-| `entities/` | `entity` | 斯蒂芬·安戈、黑曜石（Obsidian） |
-| 根目录 | `synthesis` | [维基索引](Wiki%20Index_维基索引%5C) |
+| 子目录         | `type`      | 内容示例                                         |
+| ----------- | ----------- | -------------------------------------------- |
+| `concepts/` | `concept`   | 文件优于应用、数字耐久性                                 |
+| `entities/` | `entity`    | 斯蒂芬·安戈、黑曜石（Obsidian）                         |
+| 根目录         | `synthesis` | [Wiki Index_维基索引](wiki/Wiki%20Index_维基索引.md) |
 
 每页必须包含 frontmatter（`title`、`type`、`tags`、`sources`），且正文至少有一个指向其他页面的 wikilink。
 
@@ -167,7 +167,7 @@ sources: []
 4. **计划** — 影响超过 5 个文件时先展示计划、等待批准
 5. **写入百科** — 新建或更新 `wiki/concepts/`、`wiki/entities/`
 6. **链接** — 剪藏 ↔ 百科双向 wikilink
-7. **更新索引** — [维基索引](Wiki%20Index_维基索引.md)
+7. **更新索引** — [Wiki Index_维基索引](wiki/Wiki%20Index_维基索引.md)
 8. **报告** — 列出新建/修改的文件
 
 命令定义见 `.claude/commands/wiki-ingest.md`。
